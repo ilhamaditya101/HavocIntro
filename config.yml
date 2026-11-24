@@ -1,0 +1,50 @@
+# HavocIntro - Paper 1.21.1
+# Requires Citizens 2.0.35+ (or a compatible 1.21.1 build).
+auto-intro:
+  enabled: true
+  # Runs the global intro when a first-time player joins.
+  delay-seconds: 5
+
+intro:
+  # World containing the cinematic stage. Must exist.
+  world: "world"
+  center:
+    x: 0.5
+    y: 80.0
+    z: 0.5
+  # Showcase platform positions are calculated around center.
+  showcase-radius: 5.0
+  # Seconds each online player's clone is showcased.
+  seconds-per-player: 3
+  # Camera overview height and orbit radius.
+  camera-height: 9.0
+  camera-radius: 15.0
+  opening-seconds: 5
+  ending-seconds: 4
+  # Teleport players back to their original locations if intro is stopped.
+  restore-location-on-stop: true
+
+random-teleport:
+  enabled: true
+  world: "rtp_world"
+  center:
+    x: 0.5
+    z: 0.5
+  radius: 5000
+  min-radius: 500
+  safe-location: true
+  avoid-lava: true
+  avoid-water: false
+  max-attempts: 80
+  # Keep a margin from the world border.
+  border-margin: 8
+
+messages:
+  prefix: "&8[&5HavocIntro&8] &r"
+  no-world: "&cWorld tidak ditemukan: %world%"
+  started: "&aIntro dimulai untuk semua player online."
+  stopped: "&eIntro dihentikan."
+  finished: "&aIntro selesai!"
+  auto-on: "&aAuto intro diaktifkan."
+  auto-off: "&eAuto intro dimatikan."
+  reloaded: "&aConfig berhasil dimuat ulang."

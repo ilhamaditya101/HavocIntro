@@ -1,0 +1,15 @@
+name: HavocIntro
+version: 1.0.0
+main: id.havoc.intro.HavocIntro
+api-version: '1.21'
+author: Havoc
+description: Global cinematic player showcase and random teleport intro.
+depend: [Citizens]
+commands:
+  intro:
+    description: Controls HavocIntro
+    usage: /intro <start|stop|reload|auto on|auto off>
+    permission: havocintro.admin
+permissions:
+  havocintro.admin:
+    default: op
