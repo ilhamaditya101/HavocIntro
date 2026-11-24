@@ -36,3 +36,6 @@ Permission: `havocintro.admin` (default OP).
 - Minecraft does not expose a universal server-side full-screen black fade API. The ending uses Darkness + Blindness effects during the teleport transition.
 - For safety, random teleport checks the ground and two blocks of headroom and retries up to `max-attempts`.
 - Auto intro triggers the global intro when a first-time player joins and the delay expires, provided no intro is already running.
+
+## GitHub Actions
+The included `.github/workflows/build.yml` automatically builds the project on every push, pull request, or manual workflow dispatch. After a successful run, download the compiled JAR from the run's **Artifacts** section (`HavocIntro-1.0.0`).
